@@ -1,0 +1,15 @@
+name: Agent-Free Check
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Block agent/subagent markers
+      run: |
+        echo "Scanning for agent/subagent/delegation footprints..."
+        if grep -rni -E 'subagent_|deleg_|agent_|hermes-|claude-|opencode-|automated-|machine-generated|llm-|subagent-id|delegation-' . --exclude-dir=.git --exclude-dir=node_modules --exclude=.github/workflows; then
+          echo "AGENT FOOTPRINT DETECTED - push blocked"
+          exit 1
+        fi
+        echo "Clean - no agent footprints found."
