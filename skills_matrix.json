@@ -1,0 +1,795 @@
+{
+  "count": 46,
+  "top_skills": [
+    "Kubernetes",
+    "AWS",
+    "Python",
+    "Terraform",
+    "CI/CD",
+    "Docker",
+    "Monitoring",
+    "Bash",
+    "Security",
+    "Jenkins",
+    "Prometheus",
+    "Grafana",
+    "Linux",
+    "Observability",
+    "Ansible"
+  ],
+  "skill_counts": {
+    "Kubernetes": 44,
+    "AWS": 43,
+    "Python": 34,
+    "Terraform": 33,
+    "CI/CD": 30,
+    "Docker": 15,
+    "Monitoring": 12,
+    "Bash": 11,
+    "Security": 10,
+    "Jenkins": 8,
+    "Prometheus": 8,
+    "Grafana": 8,
+    "Linux": 7,
+    "Observability": 6,
+    "Ansible": 5
+  },
+  "jobs": [
+    {
+      "title": "AWS DevOps Engineer",
+      "company": "Softthink Solutions",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Terraform",
+        "Python",
+        "Jenkins",
+        "Helm",
+        "Linux",
+        "CI/CD"
+      ],
+      "level": "mid",
+      "location": "Herndon, VA",
+      "remote": true
+    },
+    {
+      "title": "Senior DevOps Engineer",
+      "company": "CLANX",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Terraform",
+        "CI/CD",
+        "Observability",
+        "Security",
+        "Python",
+        "Bash"
+      ],
+      "level": "senior",
+      "location": "Pune, Maharashtra",
+      "remote": true
+    },
+    {
+      "title": "AWS DevOps Engineer",
+      "company": "Euphoric Thought Technologies",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Docker",
+        "Python",
+        "CI/CD",
+        "Monitoring"
+      ],
+      "level": "mid",
+      "location": "Bengaluru",
+      "remote": true
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "Captivation Software",
+      "skills": [
+        "AWS",
+        "Terraform",
+        "Kubernetes",
+        "Python",
+        "Jenkins",
+        "CI/CD",
+        "Linux"
+      ],
+      "level": "mid",
+      "location": "Annapolis Junction, MD",
+      "remote": false
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "Captivation Software",
+      "skills": [
+        "AWS",
+        "Terraform",
+        "Ansible",
+        "Python",
+        "Kubernetes",
+        "Linux"
+      ],
+      "level": "mid",
+      "location": "Columbia, MD",
+      "remote": false
+    },
+    {
+      "title": "AWS Cloud Engineer",
+      "company": "Captivation Software",
+      "skills": [
+        "AWS",
+        "Python",
+        "Linux",
+        "Terraform",
+        "Kubernetes",
+        "Ansible"
+      ],
+      "level": "mid",
+      "location": "Columbia, MD",
+      "remote": false
+    },
+    {
+      "title": "Senior DevOps Engineer",
+      "company": "CLANX",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Terraform",
+        "CloudFormation",
+        "GitHub Actions",
+        "Python"
+      ],
+      "level": "senior",
+      "location": "Pune",
+      "remote": true
+    },
+    {
+      "title": "AWS DevOps/MLOps Engineer",
+      "company": "SAPLING INFOSYSTEMS",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Terraform",
+        "Python",
+        "Bash",
+        "Airflow",
+        "CloudWatch",
+        "Prometheus",
+        "Grafana"
+      ],
+      "level": "senior",
+      "location": "Remote",
+      "remote": true
+    },
+    {
+      "title": "AWS & DevOps Engineer",
+      "company": "Exaltt Core Solutions",
+      "skills": [
+        "AWS",
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "CI/CD"
+      ],
+      "level": "mid",
+      "location": "Coimbatore",
+      "remote": true
+    },
+    {
+      "title": "DevOps Engineer - Kubernetes / Terraform",
+      "company": "Shenll Technology",
+      "skills": [
+        "Kubernetes",
+        "Terraform",
+        "AWS",
+        "Docker"
+      ],
+      "level": "mid",
+      "location": "Chennai",
+      "remote": true
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "Capgemini",
+      "skills": [
+        "AWS",
+        "EC2",
+        "VPC",
+        "IAM",
+        "Terraform",
+        "CloudFormation",
+        "Docker",
+        "Kubernetes",
+        "Python",
+        "Bash",
+        "Prometheus",
+        "Grafana"
+      ],
+      "level": "mid",
+      "location": "Hyderabad",
+      "remote": true
+    },
+    {
+      "title": "AWS DevOps Engineer",
+      "company": "Leidos",
+      "skills": [
+        "AWS",
+        "Terraform",
+        "Kubernetes",
+        "CI/CD",
+        "Security"
+      ],
+      "level": "senior",
+      "location": "Bristol, UK",
+      "remote": true
+    },
+    {
+      "title": "Senior DevOps Engineer",
+      "company": "Corriculo",
+      "skills": [
+        "Terraform",
+        "Azure",
+        "Kubernetes",
+        "Remote",
+        "CI/CD"
+      ],
+      "level": "senior",
+      "location": "London",
+      "remote": true
+    },
+    {
+      "title": "Lead DevOps Engineer",
+      "company": "JPMorgan Chase",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "Bash",
+        "Python",
+        "CI/CD",
+        "Git",
+        "Monitoring"
+      ],
+      "level": "senior",
+      "location": "Columbus, OH",
+      "remote": false
+    },
+    {
+      "title": "AWS Kubernetes / DevOps Engineer",
+      "company": "Talent Groups",
+      "skills": [
+        "AWS",
+        "EKS",
+        "Docker",
+        "Terraform",
+        "CloudFormation",
+        "Prometheus",
+        "Grafana",
+        "Splunk",
+        "GitHub",
+        "ArgoCD"
+      ],
+      "level": "senior",
+      "location": "Austin, TX",
+      "remote": true
+    },
+    {
+      "title": "Senior DevOps Engineer (AWS & Kubernetes)",
+      "company": "Rose International",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Linux",
+        "Java",
+        "Jenkins",
+        "CI/CD",
+        "Networking"
+      ],
+      "level": "senior",
+      "location": "USA",
+      "remote": false
+    },
+    {
+      "title": "AWS DevOps Engineer L2",
+      "company": "Wissen Infotech",
+      "skills": [
+        "Kubernetes",
+        "Helm",
+        "Docker",
+        "AWS",
+        "CloudWatch",
+        "Prometheus",
+        "Grafana",
+        "GitHub",
+        "ArgoCD"
+      ],
+      "level": "mid",
+      "location": "Bengaluru",
+      "remote": true
+    },
+    {
+      "title": "DevOps Engineer - Kubernetes, Terraform, Ansible, AWS",
+      "company": "GlobalLogic",
+      "skills": [
+        "Terraform",
+        "Ansible",
+        "CloudFormation",
+        "AWS",
+        "Kubernetes",
+        "Docker",
+        "Python",
+        "Bash",
+        "Jenkins",
+        "GitLab CI",
+        "Prometheus",
+        "Grafana",
+        "Security"
+      ],
+      "level": "mid",
+      "location": "Chennai",
+      "remote": true
+    },
+    {
+      "title": "DevOps Engineer (AWS EKS)",
+      "company": "GlobalLogic",
+      "skills": [
+        "Kubernetes",
+        "AWS",
+        "Docker",
+        "Terraform",
+        "Helm",
+        "Python",
+        "Jenkins",
+        "GitHub",
+        "Prometheus",
+        "Grafana"
+      ],
+      "level": "mid",
+      "location": "Hyderabad",
+      "remote": true
+    },
+    {
+      "title": "DevOps Engineer (Kubernetes, AWS)",
+      "company": "Swisscom",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Terraform",
+        "Crossplane",
+        "Go",
+        "Python",
+        "CI/CD"
+      ],
+      "level": "mid",
+      "location": "Rotterdam",
+      "remote": true
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "CodeChavo",
+      "skills": [
+        "AWS",
+        "EC2",
+        "S3",
+        "ECS",
+        "RDS",
+        "CloudWatch",
+        "Terraform",
+        "Ansible",
+        "CI/CD",
+        "Docker",
+        "Kubernetes",
+        "Python",
+        "Bash",
+        "Prometheus",
+        "Grafana",
+        "ELK"
+      ],
+      "level": "mid",
+      "location": "Bengaluru",
+      "remote": false
+    },
+    {
+      "title": "Senior DevOps Engineer",
+      "company": "RemoteRocketship",
+      "skills": [
+        "AWS",
+        "CI/CD",
+        "Terraform",
+        "Kubernetes",
+        "Monitoring",
+        "Python"
+      ],
+      "level": "senior",
+      "location": "United States - Remote",
+      "remote": true
+    },
+    {
+      "title": "Senior Reliability Engineer",
+      "company": "RemoteRocketship",
+      "skills": [
+        "Observability",
+        "Automation",
+        "Incident Response",
+        "AWS",
+        "Kubernetes"
+      ],
+      "level": "senior",
+      "location": "United States - Remote",
+      "remote": true
+    },
+    {
+      "title": "DevOps Architect",
+      "company": "RemoteRocketship",
+      "skills": [
+        "Kubernetes",
+        "GitOps",
+        "AWS",
+        "Multi-cloud",
+        "Automation"
+      ],
+      "level": "senior",
+      "location": "Spain - Remote",
+      "remote": true
+    },
+    {
+      "title": "Senior DevOps Manager",
+      "company": "RemoteRocketship",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "CI/CD",
+        "AI Tooling",
+        "Security",
+        "Observability"
+      ],
+      "level": "senior",
+      "location": "Remote",
+      "remote": true
+    },
+    {
+      "title": "Senior/Staff DevOps Engineer",
+      "company": "RemoteRocketship",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Security",
+        "Observability",
+        "CI/CD",
+        "Python"
+      ],
+      "level": "senior",
+      "location": "Remote",
+      "remote": true
+    },
+    {
+      "title": "Azure Integration & DevOps Engineer",
+      "company": "RemoteRocketship",
+      "skills": [
+        "Azure",
+        "CI/CD",
+        "Terraform",
+        "Kubernetes",
+        "Python",
+        "APIs"
+      ],
+      "level": "mid",
+      "location": "Remote",
+      "remote": true
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "RemoteRocketship",
+      "skills": [
+        "CI/CD",
+        "Automation",
+        "Cloud",
+        "Python",
+        "Node.js"
+      ],
+      "level": "mid",
+      "location": "Remote",
+      "remote": true
+    },
+    {
+      "title": "Senior DevOps Engineer",
+      "company": "Lemon.io",
+      "skills": [
+        "DevOps",
+        "Azure DevOps",
+        "AWS",
+        "GCP",
+        "Python",
+        "Kubernetes",
+        "SQL"
+      ],
+      "level": "senior",
+      "location": "Remote",
+      "remote": true
+    },
+    {
+      "title": "Senior DevOps Engineer",
+      "company": "Toptal",
+      "skills": [
+        "AWS",
+        "GCP",
+        "Kubernetes",
+        "Terraform",
+        "Python",
+        "Bash",
+        "Monitoring"
+      ],
+      "level": "senior",
+      "location": "Worldwide",
+      "remote": true
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "Higher Logic",
+      "skills": [
+        "SaaS",
+        "DevOps",
+        "Infrastructure",
+        "CI/CD",
+        "AWS",
+        "Kubernetes"
+      ],
+      "level": "mid",
+      "location": "Remote - Ontario/Quebec",
+      "remote": true
+    },
+    {
+      "title": "Senior DevOps Engineer",
+      "company": "RemoteOK",
+      "skills": [
+        "AWS",
+        "Terraform",
+        "Kubernetes",
+        "Python",
+        "Bash",
+        "CI/CD",
+        "Monitoring"
+      ],
+      "level": "senior",
+      "location": "United States",
+      "remote": true
+    },
+    {
+      "title": "Senior Platform Engineer",
+      "company": "Imaige Analytics",
+      "skills": [
+        "AWS",
+        "Terraform",
+        "Kubernetes",
+        "Python",
+        "Shell",
+        "CI/CD",
+        "GitHub Actions",
+        "Observability"
+      ],
+      "level": "senior",
+      "location": "Remote",
+      "remote": true
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "Kong Inc",
+      "skills": [
+        "Kubernetes",
+        "AWS",
+        "CI/CD",
+        "Terraform",
+        "Monitoring",
+        "Security"
+      ],
+      "level": "mid",
+      "location": "United States - Remote",
+      "remote": true
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "Dropbox",
+      "skills": [
+        "Kubernetes",
+        "Storage",
+        "AWS",
+        "CI/CD",
+        "Python",
+        "Go"
+      ],
+      "level": "senior",
+      "location": "Canada - Remote",
+      "remote": true
+    },
+    {
+      "title": "Site Reliability Engineer 2",
+      "company": "Kong Inc",
+      "skills": [
+        "SRE",
+        "AWS",
+        "Kubernetes",
+        "Observability",
+        "Python",
+        "Terraform",
+        "CI/CD"
+      ],
+      "level": "mid",
+      "location": "United States - Remote",
+      "remote": true
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "Higher Logic",
+      "skills": [
+        "SaaS",
+        "DevOps",
+        "AWS",
+        "Kubernetes",
+        "CI/CD",
+        "Monitoring",
+        "Security"
+      ],
+      "level": "mid",
+      "location": "Remote - Ontario/Quebec",
+      "remote": true
+    },
+    {
+      "title": "Senior DevOps Engineer",
+      "company": "RemoteOK",
+      "skills": [
+        "AWS",
+        "Terraform",
+        "Python",
+        "Kubernetes",
+        "Monitoring",
+        "Security",
+        "GitOps"
+      ],
+      "level": "senior",
+      "location": "Remote",
+      "remote": true
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "We Work Remotely",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Terraform",
+        "Python",
+        "CI/CD",
+        "Docker"
+      ],
+      "level": "mid",
+      "location": "Remote",
+      "remote": true
+    },
+    {
+      "title": "Site Reliability Engineer",
+      "company": "We Work Remotely",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Monitoring",
+        "Python",
+        "Terraform",
+        "CI/CD"
+      ],
+      "level": "mid",
+      "location": "Remote",
+      "remote": true
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "Glassdoor Listing",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Terraform",
+        "Docker",
+        "Jenkins",
+        "CI/CD",
+        "Python",
+        "Bash",
+        "Monitoring"
+      ],
+      "level": "mid",
+      "location": "United States",
+      "remote": true
+    },
+    {
+      "title": "Senior DevOps Engineer",
+      "company": "Glassdoor Listing",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Terraform",
+        "Ansible",
+        "Python",
+        "Jenkins",
+        "CI/CD",
+        "Security",
+        "CloudFormation"
+      ],
+      "level": "senior",
+      "location": "United States",
+      "remote": true
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "AngelList",
+      "skills": [
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "CI/CD",
+        "Python",
+        "Git"
+      ],
+      "level": "entry",
+      "location": "Remote",
+      "remote": true
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "Stack Overflow Jobs",
+      "skills": [
+        "Linux",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "CI/CD",
+        "Python",
+        "Bash",
+        "Monitoring",
+        "Git"
+      ],
+      "level": "mid",
+      "location": "Remote",
+      "remote": true
+    },
+    {
+      "title": "Senior DevOps Engineer",
+      "company": "Stack Overflow Jobs",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Terraform",
+        "Helm",
+        "ArgoCD",
+        "Prometheus",
+        "Grafana",
+        "Python",
+        "Bash",
+        "Security"
+      ],
+      "level": "senior",
+      "location": "Remote",
+      "remote": true
+    },
+    {
+      "title": "DevOps / SRE Engineer",
+      "company": "Indeed",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Terraform",
+        "Jenkins",
+        "Docker",
+        "Python",
+        "Linux",
+        "Monitoring",
+        "CI/CD"
+      ],
+      "level": "mid",
+      "location": "Austin, TX",
+      "remote": true
+    }
+  ],
+  "sources": "Indeed, LinkedIn, RemoteOK, RemoteRocketship, Glassdoor, Stack Overflow Jobs, We Work Remotely, AngelList"
+}
