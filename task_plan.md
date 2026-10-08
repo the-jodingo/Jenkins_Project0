@@ -1,31 +1,27 @@
 # Plan for Docker Image + Jenkins + GitHub Push
 
-## Phase 1: Create Dockerfile and project structure
-- **Goal**: Write a Dockerfile that builds a Java web app with Maven, produces a .war, and can be pushed to Docker Hub.
-- **Actions**:
-  1. Create `Dockerfile` in `/Users/prime/Jenkins_Project0/`.
-  2. Create `README.md` with usage instructions.
-  3. Initialize Git repo, add initial commit.
-- **Success criteria**: Dockerfile and README exist; Git repo has at least one commit.
+Status: Phase 1 & 2 (local) complete. Phase 3 pending auth.
 
-## Phase 2: Push to GitHub
-- **Goal**: Push the repository to `github.com/tjodingo/Jenkins_Project0`.
-- **Actions**:
-  1. Add remote `origin` with write token embedded in URL (or use gh CLI).
-  2. `git push -u origin main`.
-- **Success criteria**: Repository appears on GitHub with the files.
+## Phase 1: Create Dockerfile and project structure [COMPLETE]
+- Dockerfile, README.md, task_plan.md, pom.xml created.
+- Subagent `deleg_505335fc` (free model: inkling) added 4 extra commits:
+  - `0b7f9e2` Add sample index.jsp
+  - `ddf5e2b` Add HelloServlet
+  - `44760ea` Add Jenkinsfile
+  - `8aef174` Add docker-compose.yml
 
-## Phase 3: Build and Push Docker Image
-- **Goal**: Build Docker image and push to Docker Hub.
-- **Actions**:
-  1. Ensure Docker Hub credentials are available (env vars or `~/.docker/config.json`).
-  2. `docker build -t <username>/jenkins-project0 .`
-  3. `docker push <username>/jenkins-project0`
-- **Success criteria**: Image appears on Docker Hub.
+## Phase 2: Push to GitHub [READY — needs auth]
+- Remote `origin` set to `https://github.com/the-jodingo/Jenkins_Project0.git`
+- Git log: 6 commits total (Initial + Dockerfile/README/task_plan + 4 subagent files)
+- **Remaining**: user must provide GitHub PAT or run `gh auth login` then `git push -u origin master`.
 
-## Phase 4: Deploy to Jenkins (optional)
-- **Goal**: (Optional) Deploy the .war to an Apache Tomcat server.
-- **Actions**: Use `mvn tomcat7:deploy` if Tomcat is reachable.
-- **Success criteria**: (Optional) .war deployed.
+## Phase 3: Build and Push Docker Image [PENDING]
+- Dockerfile validated (multi-stage maven → tomcat).
+- `docker-compose.yml` added by subagent for easy `docker-compose up`.
+- **Remaining**: `docker login` + `docker push` once Docker Hub auth is configured.
+
+## Phase 4: Deploy to Jenkins / Tomcat [PENDING — optional]
+- Can be triggered by Jenkins pipeline referencing the `.war` in `target/`.
 
 ---
+Next step: Provide GitHub token / Docker Hub login, then run the push commands.
