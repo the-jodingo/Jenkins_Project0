@@ -14,7 +14,7 @@ if grep -rni -E 'subagent_|deleg_|agent_|hermes-|claude-|opencode-|automated-|ma
   exit 1
 fi
 ```
-4. Ensure commit author is clean: only allow `- the-jodingo` or a clean human name.
+4. Ensure commit author is clean: only allow `the-jodingo` or a clean human name.
 5. Ensure no agent references in commit messages or code comments.
 
 ## Enforcement layers

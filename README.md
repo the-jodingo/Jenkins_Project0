@@ -1,61 +1,107 @@
-# Jenkins Project0 — Maven Web Application
+# Jenkins Project0 — Pizza Shop
 
-## Overview
-This repository contains a simple Maven web application that produces a `.war` artifact and can be containerized with Docker for deployment to Apache Tomcat (e.g., via Jenkins).
+A Java web application that builds into a `.war` with Maven and deploys to Apache Tomcat. The app serves a pizza shop landing page with a live menu, an interactive cart, and a JSON menu API.
 
-## Project Structure
+Continuous integration packages the WAR and deploys it to Tomcat; the same image can also be built and run with Docker.
+
+## Project structure
+
 ```
 Jenkins_Project0/
-├── pom.xml                # Maven POM — war packaging, tomcat-maven-plugin
-├── Dockerfile             # Multi‑stage build: maven → tomcat
-├── src/
-│   └── main/
-│       └── webapp/
-│           ├── index.jsp  # Sample page (created on first build)
-│           └── WEB-INF/
-│               └── web.xml
-├── task_plan.md           # This plan
-└── README.md              # You are here
+├── pom.xml                              # Maven POM — war packaging
+├── Jenkinsfile                          # CI/CD pipeline
+├── Dockerfile                           # Multi-stage build: Maven → Tomcat
+├── docker-compose.yml
+├── src/main/
+│   ├── java/com/pizzashop/
+│   │   └── PizzaServlet.java            # JSON menu API (/api/pizzas)
+│   └── webapp/
+│       ├── index.jsp                    # Pizza shop landing page
+│       ├── style.css                    # Pizza theme styling
+│       └── script.js                    # Cart and ordering logic
+└── .github/
+    └── workflows/
+        ├── ci.yml                       # Build on push / PR
+        └── check-agent-free.yml         # Source-hygiene check
 ```
 
-## Building Locally (without Docker)
+## Requirements
+
+- JDK 11+
+- Maven 3.8+
+- Apache Tomcat 9 (or Docker)
+
+## Build
+
 ```bash
-mvn clean package          # produces target/ROOT.war
+mvn clean package
 ```
 
-## Docker Build & Push
+Produces `target/pizza-shop.war`.
+
+## Run with Docker
+
 ```bash
-# 1. Build the image (replace `your-dockerhub-username` with your actual account)
-docker build -t your-dockerhub-username/jenkins-project0 .
-
-# 2. Push to Docker Hub
-docker push your-dockerhub-username/jenkins-project0
+docker build -t jenkins-project0 .
+docker run -d -p 8080:8080 --name pizza-shop jenkins-project0
 ```
 
-## Running the Container Locally
+Or with Compose:
+
 ```bash
-docker run -d -p 8080:8080 your-dockerhub-username/jenkins-project0
+docker compose up --build -d
 ```
-Visit `http://localhost:8080` — the app will display a hello page served by Tomcat.
 
-## Jenkins Integration
-- In a Jenkins pipeline, you can use the **Docker Pipeline** plugin:
-```groovy
-docker.image('your-dockerhub-username/jenkins-project0').inside {
-    // run mvn tests, etc.
+Visit `http://localhost:8080`.
+
+## Deploy to a running Tomcat
+
+The app is served at the server root, so copy the WAR in as `ROOT.war`:
+
+```bash
+export CATALINA_HOME=/path/to/tomcat
+"$CATALINA_HOME/bin/shutdown.sh" 2>/dev/null
+rm -rf "$CATALINA_HOME/webapps/ROOT" "$CATALINA_HOME/webapps/ROOT.war"
+cp target/pizza-shop.war "$CATALINA_HOME/webapps/ROOT.war"
+"$CATALINA_HOME/bin/startup.sh"
+```
+
+Verify:
+
+```bash
+curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080/
+curl -s http://localhost:8080/api/pizzas
+```
+
+## Jenkins pipeline
+
+| Stage | Action |
+|-------|--------|
+| Checkout | Pull source from SCM |
+| Build | `mvn clean compile` |
+| Test | `mvn test` with JUnit results |
+| Package WAR | `mvn war:war`, archive the artifact |
+| Deploy to Tomcat | Upload the WAR via the Tomcat Manager |
+| Verify | Assert HTTP 200 on the deployed app |
+
+The deploy stage reads a Jenkins credential with the ID `tomcat-creds`. On the Tomcat side, a manager user with the `manager-script` role is required in `conf/tomcat-users.xml`.
+
+## API
+
+`GET /api/pizzas`
+
+```json
+{
+  "menu": [
+    {"name": "Cheese Margherita", "price": 12.99},
+    {"name": "Pepperoni Classic", "price": 16.99},
+    {"name": "Veggie Delight",     "price": 14.50}
+  ],
+  "shopName": "Pizza Shop",
+  "deliveryTime": "30-45 mins"
 }
 ```
-- Or use the **Tomcat Manager** plugin to deploy the `.war` after the image is run.
 
-## Credentials
-- Docker Hub: ensure you are logged in (`docker login`) or store credentials in `~/.docker/config.json`.
-- GitHub: a personal access token with `repo` scope is needed to push this repo (see `git remote add` below).
+## License
 
-## GitHub Push
-```bash
-# From the project root
-git remote add origin https://github.com/tjodingo/Jenkins_Project0.git
-git branch -M main
-git push -u origin main
-```
-*(You will be prompted for your GitHub token or use `gh auth login` first.)*
+MIT — see [LICENSE](LICENSE).

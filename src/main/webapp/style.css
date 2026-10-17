@@ -1,0 +1,102 @@
+/* Pizza Shop Theme - Custom Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Dancing+Script:wght@700&display=swap');
+
+body {
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #fff5f0 0%, #ffecec 50%, #fff5f0 100%);
+    min-height: 100vh;
+}
+
+.pizza-header {
+    background: linear-gradient(135deg, #e53935 0%, #ef6c00 50%, #f9a825 100%);
+    position: relative;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+}
+
+.pizza-pattern-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.3;
+}
+
+.pizza-logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.pizza-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.pizza-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+}
+
+.pizza-card-img {
+    font-size: 3.5rem;
+    line-height: 1;
+}
+
+.card-title {
+    color: #d84315;
+}
+
+.price {
+    color: #d32f2f;
+}
+
+.card-header.bg-danger {
+    background-color: #d32f2f !important;
+}
+
+.card-header.bg-warning {
+    background-color: #ff9800 !important;
+}
+
+.card-header.bg-dark {
+    background-color: #1a1a1a !important;
+}
+
+/* Order table styling */
+#order-table-body td {
+    border-color: #ffe0e0;
+}
+
+#order-table-body tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pizza-logo {
+        font-size: 2.5rem;
+    }
+
+    .pizza-header {
+        min-height: 160px;
+    }
+}
+
+/* Animation for added items */
+.cart-item-added {
+    animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
