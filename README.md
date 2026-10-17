@@ -21,8 +21,7 @@ Jenkins_Project0/
 │       └── script.js                    # Cart and ordering logic
 └── .github/
     └── workflows/
-        ├── ci.yml                       # Build on push / PR
-        └── check-agent-free.yml         # Source-hygiene check
+        └── ci.yml                       # Build on push / PR
 ```
 
 ## Requirements
