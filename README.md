@@ -1,7 +1,7 @@
 # Jenkins Project0 — Pizza Shop
 
 A Java web application that builds into a `.war` with Maven and deploys to Apache Tomcat. The app serves a pizza shop landing page with a live menu, an interactive cart, and a JSON menu API.
-
+Confirmed github actions that the code is clean and live and will deploy
 Continuous integration packages the WAR and deploys it to Tomcat; the same image can also be built and run with Docker.
 
 ## Project structure
